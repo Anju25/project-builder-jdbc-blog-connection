@@ -40,6 +40,23 @@ And finally, create a pull request so your ProGrad Mentor (PM) can review your w
 Download ojdbc6.jar from the given link [https://www.oracle.com/database/technologies/jdbcdriver-ucp-downloads.html]
 
 ## Progression 0:
+#JDBC properties entry for MYSQL server
+driver = oracle.jdbc.OracleDriver
+url=jdbc:oracle:thin:@localhost:1521:xe
+username=your_username
+password=your_password
+
+```
+
+**Sample Output**
+
+```Connection established```
+
+**Sample Output**
+
+```Check your connection```
+
+
 1. ***Right click on src folder and select new - file and name it as jdbc.properties.***
 2. ***You can use the jdbc properties given below in the NOTE section.***
 
@@ -69,18 +86,3 @@ public static Properties loadPropertiesFile() throws Exception {
 Create a file called as jdbc.properites. To create a file right click on the application - new - file - name the file as jdbc.properties.
 ```
 jdbc.properties
-#JDBC properties entry for MYSQL server
-driver = oracle.jdbc.OracleDriver
-url=jdbc:oracle:thin:@localhost:1521:xe
-username=your_username
-password=your_password
-
-```
-
-**Sample Output**
-
-```Connection established```
-
-**Sample Output**
-
-```Check your connection```
